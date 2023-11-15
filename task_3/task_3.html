@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./task_3_style.css" />
+  </head>
+  <body>
+    <section id="simple-form">
+      <article id="top-section">
+        <div id="img-div">
+          <img
+            src="https://cdn.freebiesupply.com/logos/large/2x/international-1-logo-png-transparent.png"
+            alt="logo"
+            height="50px"
+            width="50px"
+          />
+        </div>
+        <div id="text-div">
+          <span id="title">Welcome back</span><br />
+          <span id="para">Enter your credentials to login</span>
+        </div>
+      </article>
+      <form action="">
+        <div id="nameCont">
+          <!-- <label for="name">Name:</label> -->
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your Name"
+            required
+          />
+        </div>
+
+        <div id="emailCont">
+          <!-- <label for="email">Email:</label> -->
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+
+        <div id="messageCont">
+          <!-- <label for="message">Message:</label> -->
+
+          <textarea
+            type="message"
+            id="message"
+            rows="7"
+            placeholder="Type your message"
+            required
+            style="font-size: 17px"
+          ></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+#externalCSS>article {
+    background-color:darkslategrey;
+  }
+  #externalCSS>article>h2 {
+    color:darkgoldenrod;
+    text-decoration: underline;
+  }
+  #externalCSS>article>p {
+    font-weight: 900;
+    color:coral;
+  }
+
+
+  #target_same_element>article>p{
+    color: rgb(0, 255, 170);
+  }
+  #target_same_element>article>span{
+    color: rgb(255, 15, 227);
+  }

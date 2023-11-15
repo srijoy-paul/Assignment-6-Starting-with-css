@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the document -->
+    <title>Document</title>
+    <!-- Internal CSS styles -->
+    <style>
+      #internalCSS article {
+        background-color: blanchedalmond;
+      }
+      #internalCSS article h2 {
+        color: rgba(220, 20, 60, 0.702);
+        text-decoration: underline;
+      }
+      #internalCSS article p {
+        font-weight: 900;
+        color: rgba(0, 150, 155, 0.744);
+      }
+
+      #target_same_element > article > p {
+        color: blue;
+      }
+      #target_same_element > article > span {
+        color: blueviolet;
+      }
+    </style>
+    <!-- External CSS link -->
+    <link rel="stylesheet" href="./task_1_style.css" />
+  </head>
+  <body>
+    <!-- Inline CSS example -->
+    <div id="inlineCSS">
+      <article style="background-color: teal">
+        <h2 style="color: antiquewhite; text-decoration: underline">
+          Using Inline CSS
+        </h2>
+        <p style="color: burlywood; font-weight: 900; padding: 5px">
+          Inline CSS is a way to apply styles directly within HTML tags. It's
+          useful for individual elements when you don't want to create an
+          external stylesheet. To use inline CSS, add the style attribute to an
+          HTML tag and define the styling directly.
+        </p>
+      </article>
+    </div>
+    <!-- Inline CSS example Ends -->
+
+    <!-- Internal CSS example -->
+    <div id="internalCSS">
+      <article>
+        <h2>Using Internal CSS</h2>
+        <p>
+          Internal CSS is a method of applying styles to an HTML document by
+          placing the CSS code within the
+          <strong><em>&lt;style&gt;</em></strong> tags in the
+          <strong><em>document's head</em></strong
+          >. This approach is useful for styling a single HTML file without
+          creating an external stylesheet.
+        </p>
+      </article>
+    </div>
+    <!-- Internal CSS example Ends-->
+
+    <!-- External CSS example -->
+    <div id="externalCSS">
+      <article>
+        <h2>Using External CSS</h2>
+        <p>
+          External CSS allows you to separate your styling from HTML by creating
+          a standalone stylesheet. This promotes cleaner code and easier
+          maintenance, especially for larger projects. To use external CSS,
+          create a .css file and link it to your HTML using the &lt;link /&gt;
+          tag in the head section.
+        </p>
+      </article>
+    </div>
+    <!-- External CSS example Ends-->
+
+    <!-- Targeting the same element with different CSS methods -->
+    <div id="target_same_element" style="border: 2px solid goldenrod">
+      <h2>Targeting element with different css methods</h2>
+      <article style="border: 2px solid skyblue; margin: 2px; padding: 12px">
+        <p style="color: coral">
+          Here, <u>added inline CSS,internal CSS and external CSS</u>, but
+          <u>inline CSS is actually applied</u>.
+        </p>
+        <span>
+          Here, added <u>internal and external CSS</u>, and
+          <u>External css is linked after the Internal CSS</u> &lt;style&gt; is
+          written inside &lt;head&gt; tag, and
+          <u>external is actually applied</u>.
+        </span>
+        <div>
+          <br />
+          If
+          <u
+            >External css is linked before the Internal CSS &lt;style&gt; that
+            is written inside &lt;head&gt;</u
+          >
+          tag then if we add both external and internal then,
+          <u>actually internal style will be applied</u>.
+        </div>
+      </article>
+    </div>
+    <!-- Targeting the same element with different CSS methods Ends-->
+  </body>
+</html>

@@ -1,0 +1,70 @@
+/* Custom color Palette*/
+:root {
+    --primary-color: #3498db;   /* Blue */
+    --secondary-color: #2ecc71; /* Green */
+    --accent-color: #e74c3c;    /* Red */
+
+    --primary-background-color: #219ebc; /* Light Gray */
+    --inputfield-bg-color:#219dbc29; /*Off blue*/
+    --primary-text-color: #023047; /* Dark Gray */
+    --secondry-text-color: white; /* white */
+  }
+
+body{
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#simple-form{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 0 auto;
+    background-color: var(--secondry-text-color);
+    border-radius: 5px;
+    padding: 19px;
+}
+#top-section{
+    align-self: center;
+}
+#top-section #img-div{
+    display: flex;
+    justify-content: center;
+}
+#top-section #text-div{
+    text-align: center;
+}
+#top-section #text-div #title{
+    font-size: larger;
+    font-weight: bolder;
+}
+#top-section #text-div #para{
+    font-size: smaller;
+    color:#b8b5ac;
+}
+form{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+form div{
+    padding-right: 32px;
+}
+form >div> input, form>div>textarea,button{
+    width: 100%;
+    padding: 8px 15px 12px 18px ;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 19px;
+    border: none;
+    /* Here, in background color of inputfields and textarea, the opacity is set to approximately (0.2) 20%. */
+    background-color: rgba(33, 156, 186, 0.161);
+    font-size: 17px;
+}
+button{
+    background-color: var(--primary-background-color);
+    color: var(--secondry-text-color);
+    font-size: large;
+    padding: 15px 0 ;
+    cursor: pointer;
+}
